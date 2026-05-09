@@ -1,0 +1,25 @@
+/**
+ * DatasetUpload.css - Styling for dataset upload component
+ */
+
+.dataset-upload {
+  width: 100%;
+}
+
+.dataset-upload-zone {
+  transition: all 0.2s ease;
+}
+
+.dataset-upload-zone:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dataset-upload-zone.drag-active {
+  background-color: #e3f2fd !important;
+  border-color: #1976d2 !important;
+}
+
+input[type='file'] {
+  display: none;
+}

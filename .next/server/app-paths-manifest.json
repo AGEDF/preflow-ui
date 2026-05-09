@@ -1,0 +1,8 @@
+{
+  "/workflows/page": "app/workflows/page.js",
+  "/api/backend/[...path]/route": "app/api/backend/[...path]/route.js",
+  "/page": "app/page.js",
+  "/datasets/page": "app/datasets/page.js",
+  "/jobs/page": "app/jobs/page.js",
+  "/workflows/[workflowId]/page": "app/workflows/[workflowId]/page.js"
+}

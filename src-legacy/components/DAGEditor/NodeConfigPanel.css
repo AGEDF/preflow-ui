@@ -1,0 +1,35 @@
+/**
+ * NodeConfigPanel.css - Styling for node configuration panel
+ */
+
+.node-config-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+.node-config-panel.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scrollbar styling */
+.node-config-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.node-config-panel::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.node-config-panel::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.node-config-panel::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

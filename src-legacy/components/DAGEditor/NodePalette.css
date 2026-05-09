@@ -1,0 +1,67 @@
+/**
+ * NodePalette.css - Styling for draggable node palette
+ */
+
+.node-palette {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+  border-right: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.node-palette-item {
+  transition: background-color 0.1s ease;
+}
+
+.node-palette-item:hover {
+  background-color: #f5f5f5;
+}
+
+.node-palette-item[draggable='true'] {
+  user-select: none;
+}
+
+.node-palette-item[draggable='true']:active {
+  cursor: grabbing;
+  opacity: 0.7;
+}
+
+/* Accordion styling */
+.MuiAccordion-root {
+  background: transparent !important;
+}
+
+.MuiAccordionSummary-root {
+  padding: 8px 16px;
+  min-height: 40px;
+  background: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MuiAccordionSummary-root:hover {
+  background: #f0f0f0;
+}
+
+.MuiAccordionDetails-root {
+  padding: 0;
+}
+
+/* Scrollbar styling */
+.node-palette::-webkit-scrollbar {
+  width: 6px;
+}
+
+.node-palette::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.node-palette::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.node-palette::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}

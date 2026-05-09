@@ -1,0 +1,70 @@
+/**
+ * CustomNode styling
+ */
+
+.custom-node {
+  padding: 0;
+  margin: 0;
+}
+
+.custom-node .node-content {
+  min-width: 120px;
+  max-width: 180px;
+  padding: 12px;
+  border-radius: 6px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.custom-node.selected .node-content {
+  background: #e3f2fd;
+  border: 2px solid #1976d2;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.25);
+}
+
+.custom-node .node-content:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: #1976d2;
+}
+
+/* Handles (connection points) */
+.custom-node .handle {
+  width: 8px;
+  height: 8px;
+  background: #1976d2;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.custom-node .handle-top {
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-node .handle-bottom {
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-node .handle-left {
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-node .handle-right {
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-node .handle:hover {
+  width: 10px;
+  height: 10px;
+  background: #0d47a1;
+}
